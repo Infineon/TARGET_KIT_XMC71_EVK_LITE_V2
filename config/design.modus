@@ -165,6 +165,9 @@
                         <Param id="inFlash" value="true"/>
                     </Personality>
                 </Block>
+                <Block location="ioss[0].port[21].pin[5]">
+                    <Alias value="CYBSP_ETH_RX_CTL"/>
+                </Block>
                 <Block location="ioss[0].port[23].pin[3]">
                     <Alias value="CYBSP_S2G1_PWM"/>
                     <Alias value="CYBSP_S2G2_PWM"/>

@@ -35,7 +35,6 @@
 
 
 #include <stdbool.h>
-#include "system_cat1c.h"
 #include "cy_device.h"
 #include "cy_device_headers.h"
 #include "cy_syslib.h"
@@ -307,12 +306,11 @@ static void PrepareSystemCallInfrastructure(void)
     const uint8_t u8Irq0Index = (uint8_t) (VECTOR_TABLE_OFFSET_IRQ0 / 4);
     const uint8_t u8Irq1Index = (uint8_t) (VECTOR_TABLE_OFFSET_IRQ1 / 4);
     uint32_t * const pu32RamTable   = (uint32_t *) __ramVectors;
-    uint32_t (*pu32SromTable)[VECTORTABLE_SIZE] = (uint32_t(*)[VECTORTABLE_SIZE])SROM_VECTOR_TABLE_BASE_ADDRESS;
-
+    uint32_t * const pu32SromTable  = (uint32_t *) SROM_VECTOR_TABLE_BASE_ADDRESS;
 
     // Use IRQ0 and IRQ1 handlers from SROM vector table
-    pu32RamTable[u8Irq0Index] = (*pu32SromTable)[u8Irq0Index];
-    pu32RamTable[u8Irq1Index] = (*pu32SromTable)[u8Irq1Index];
+    pu32RamTable[u8Irq0Index] = pu32SromTable[u8Irq0Index];
+    pu32RamTable[u8Irq1Index] = pu32SromTable[u8Irq1Index];
 
     NVIC_SetPriority(NvicMux0_IRQn, 1);
     NVIC_SetPriority(NvicMux1_IRQn, 0);

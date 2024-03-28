@@ -50,8 +50,8 @@ Defines:
 
 | Clock    | Source    | Output Frequency |
 |----------|-----------|------------------|
-| FLL      | IMO       | 100.0 MHz        |
-| PLL      | IMO       | 200.0 MHz        |
+| FLL      | ECO       | 100.0 MHz        |
+| PLL      | ECO       | 200.0 MHz        |
 | CLK_HF0  | CLK_PATH0 | 100 MHz          |
 | CLK_HF1  | CLK_PATH1 | 250 MHz          |
 | CLK_HF2  | CLK_PATH4 | 100 MHz          |
@@ -59,7 +59,7 @@ Defines:
 | CLK_HF4  | CLK_PATH4 | 50 MHz           |
 | CLK_HF5  | CLK_PATH2 | 125 MHz          |
 | CLK_HF6  | CLK_PATH4 | 200 MHz          |
-| CLK_HF7  | CLK_PATH6 | 8 MHz            |
+| CLK_HF7  | CLK_PATH5 | 0 MHz            |
 
 ### Power Configuration
 
@@ -86,4 +86,4 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 [settings]: https://infineon.github.io/TARGET_KIT_XMC71_EVK_LITE_V2/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2024.

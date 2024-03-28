@@ -17,6 +17,8 @@ The KIT_XMC71_EVK_LITE_V2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v2.1.0
+* Updated the KIT_XMC72_EVK, KIT_XMC72_EVK_MUR_43439M2, KIT_XMC71_EVK_LITE_V1 and KIT_XMC71_EVK_LITE_V2 BSPs to use ECO as main clock source
 #### v2.0.2
 * Updated the BSP description for KIT_XMC71_EVK_LITE_V1 and KIT_XMC71_EVK_LITE_V2 BSPs
 #### v2.0.1
@@ -50,7 +52,7 @@ This version of the KIT_XMC71_EVK_LITE_V2 BSP was validated for compatibility wi
 | :---                                      | :----:  |
 | ModusToolbox™ Software Environment        | 3.1.0   |
 | GCC Compiler                              | 12.2.1  |
-| IAR Compiler                              | 9.30.1  |
+| IAR Compiler                              | 9.40.2  |
 | ARM Compiler                              | 6.16    |
 
 Minimum required ModusToolbox™ Software Environment: v3.0.0
@@ -65,4 +67,4 @@ Minimum required ModusToolbox™ Software Environment: v3.0.0
 [api]: https://infineon.github.io/TARGET_KIT_XMC71_EVK_LITE_V2/html/modules.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2024.
